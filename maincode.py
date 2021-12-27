@@ -79,7 +79,7 @@ def makeGrid():
                 canvas.create_image(x1+20,y1+20,image=wallOutside,tags="outsideWall")
             elif col == 3:
                 canvas.create_image(x1+20,y1+20,image=wallInside,tags="insideWall")
-                winsound.PlaySound("sounds\\monkeylaught.wav",winsound.SND_FILENAME)
+                # winsound.PlaySound("sounds\\monkeylaught.wav",winsound.SND_FILENAME)
             for fruit in allFruitsAndEnimy:
                 if col == fruit['position']:
                     canvas.create_image(x1+20,y1+20,image=fruit["image"],tags="wall")        
@@ -87,9 +87,6 @@ def makeGrid():
             x2+=40
         y1 = y2
         y2 += 40
-    # for i in range(lifeUser):
-    #     canvas.create_image(Positionofuser,15,images=heart,tags="heart")
-    #     Positionofuser -= 50
     canvas.create_text(900,60,text="POINTS: "+str(Score),font="Times 15 bold",fill="white")
     canvas.create_text(40,60,text="EXIT",font="Time 15 bold",fill="#FFFFFF",tags="exit")
 makeGrid()
