@@ -162,7 +162,7 @@ def displayresult():
             canvas.create_image(500,300,image=lost,anchor="center")
             canvas.create_text(500,50,text="You lost!",font="Time 30 bold",fill="#F6BE00",tags="winner") 
             # winsound.PlaySound("sounds\\gameover.wav",winsound.SND_FILENAME)
-        if Score>=5000:
+        elif Score>=5000:
             canvas.create_image(500,300,image=win,anchor="center")
             canvas.create_text(500,50,text="You won!",font="Time 30 bold",fill="#F6BE00",tags="winner")
             # winsound.PlaySound("sounds\\winner.wav",winsound.SND_FILENAME)
